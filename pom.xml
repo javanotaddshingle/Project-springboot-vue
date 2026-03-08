@@ -40,6 +40,20 @@
             <artifactId>spring-boot-starter-webmvc-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- MySQL 数据库驱动（核心依赖，必须加） -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- 可选：MyBatis（自定义SQL更灵活，按需选择） -->
+<!--        spring-boot-starter-data-jpa、mybatis-spring-boot-starter
+底层已经包含了 spring-boot-starter-jdbc 的核心功能-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>3.0.3</version>
+        </dependency>
     </dependencies>
 
     <build>
