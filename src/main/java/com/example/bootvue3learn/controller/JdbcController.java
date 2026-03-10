@@ -1,4 +1,4 @@
-package com.example.bootvue3learn.Controller;
+package com.example.bootvue3learn.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 import java.util.List;
 @RestController
-public class jdbcController {
+public class JdbcController {
     @Autowired
     JdbcTemplate jdbcTemplate;
 

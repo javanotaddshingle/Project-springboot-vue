@@ -1,0 +1,26 @@
+@RestController:注解，使得方法返回数据而不是页面
+@GetMapping:注解，将web地址和方法映射
+@Configuration,@repository:注解
+
+#以上都将该类作为bean对象由spring管理
+
+@bean:注解，一般用于配置项config的@Configuration类中
+使用@Resource方法（要处于bean类里），@Resource(name="#")查找并注入到属性中
+
+@Value:注解，可以获取项目配置，@Value("${}")获取需要的值并注入到属性中
+
+包名:
+    controller:控制层
+    service:服务层
+    dao:数据层
+    manager:管理层、整合多个service、提供更高层的接口
+    config:配置层、可使用@bean生成全局对象
+
+resources包:
+    static包：前端可以直接访问的静态资源
+    template包：需要通过控制层访问
+
+在源代码包的java类前注解：将这个类纳入spring管理中，spring会自动创建全局对象，可用于其他地方注入
+ApplicationContext：包含所有bean对象，应用上下文
+
+#MOST IMPORTANT:所有源代码的包都必须和启动类平级
